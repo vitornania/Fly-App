@@ -13,13 +13,13 @@
         theme: {
           extend: {
             colors: {
-              "primary": "#6366f1", /* Electric Indigo: Modern, vibrant, premium */
-              "background-light": "#f3f4f6", /* Gray 100: Soft, airy */
-              "background-dark": "#0B0F19", /* Midnight: Deep, elegant black-blue */
-              "surface-dark": "#151b2b", /* Slightly lighter dark for cards */
-              "alert-red": "#f43f5e", /* Rose: Aesthetic urgency */
-              "urgent-amber": "#f59e0b", /* Amber: Warm warning */
-              "success-green": "#10b981", /* Emerald: Vibrant success */
+              "primary": "#6366f1", /* Electric Indigo */
+              "background-light": "#f3f4f6",
+              "background-dark": "#0B0F19", /* Midnight */
+              "surface-dark": "#151b2b",
+              "alert-red": "#f43f5e", /* Rose */
+              "urgent-amber": "#f59e0b", /* Amber */
+              "success-green": "#10b981", /* Emerald */
               "loyalty-gold": "#d97706", 
               "ios-gray": "#8e8e93",
               "ios-bg": "#F2F2F7"
@@ -42,13 +42,21 @@
       }
     </script>
     <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
       body {
         font-family: 'Plus Jakarta Sans', sans-serif;
         -webkit-tap-highlight-color: transparent;
-        background-color: #f3f4f6; /* Matches background-light */
+        background-color: #f3f4f6;
       }
       .dark body {
-        background-color: #0B0F19; /* Matches background-dark */
+        background-color: #0B0F19;
+      }
+      #root {
+        height: 100%;
       }
       .material-symbols-outlined {
         font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -60,7 +68,6 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
-      /* Smooth gauge animation */
       .gauge-fill {
         transition: stroke-dashoffset 1s ease-out;
       }
@@ -68,10 +75,11 @@
   <script type="importmap">
 {
   "imports": {
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.28.0?deps=react@18.3.1,react-dom@18.3.1"
   }
 }
 </script>
