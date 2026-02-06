@@ -1,0 +1,5 @@
+{
+  "name": "Gate Agent Portal",
+  "description": "A comprehensive airline operations dashboard for gate agents to manage delays, recovery, and passenger sentiment in real-time.",
+  "requestFramePermissions": []
+}
